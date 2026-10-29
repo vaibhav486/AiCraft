@@ -5,7 +5,7 @@ import star_icon from "./star_icon.svg";
 import star_dull_icon from "./star_dull_icon.svg";
 import profile_img_1 from "./profile_img_1.png";
 import arrow_icon from "./arrow_icon.svg";
-import { SquarePen, Hash, Image, Eraser, Scissors, FileText } from 'lucide-react'
+import { SquarePen, Hash, Image, Eraser, Scissors, FileText, BookOpen } from 'lucide-react'
 import ai_gen_img_1 from "./ai_gen_img_1.png";
 import ai_gen_img_2 from "./ai_gen_img_2.png";
 import ai_gen_img_3 from "./ai_gen_img_3.png";
@@ -21,6 +21,13 @@ export const assets = {
 };
 
 export const AiToolsData = [
+    {
+        title: 'Chat with PDF (RAG)',
+        description: 'Upload PDF documents and chat with AI grounded in your text with page citations.',
+        Icon: BookOpen,
+        bg: { from: '#4F46E5', to: '#7C3AED' },
+        path: '/ai/chat-pdf'
+    },
     {
         title: 'AI Article Writer',
         description: 'Generate high-quality, engaging articles on any topic with our AI writing technology.',

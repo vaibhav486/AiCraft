@@ -1,11 +1,12 @@
 import { Protect, useClerk, useUser } from '@clerk/clerk-react'
-import { Eraser, FileText, Hash, House, Icon, Image, LogOut, Scissors, SquarePen, Users } from 'lucide-react';
+import { BookOpen, Eraser, FileText, Hash, House, Icon, Image, LogOut, Scissors, SquarePen, Users } from 'lucide-react';
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 
 const navItems = [
     { to: '/ai', label: 'Dashboard', Icon: House },
+    { to: '/ai/chat-pdf', label: 'Chat with PDF', Icon: BookOpen },
     { to: '/ai/write-article', label: 'Write Article', Icon: SquarePen },
     { to: '/ai/blog-titles', label: 'Blog Titles', Icon: Hash },
     { to: '/ai/generate-images', label: 'Generate Images', Icon: Image },

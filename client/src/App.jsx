@@ -9,6 +9,7 @@ import GenerateImages from './pages/GenerateImages'
 import RemoveBackground from './pages/RemoveBackground'
 import RemoveObject from './pages/RemoveObject'
 import ReviewResume from './pages/ReviewResume'
+import ChatPdf from './pages/ChatPdf'
 import Community from './pages/Community'
 import { useAuth } from '@clerk/clerk-react'
 import { useEffect } from 'react'
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/ai' element={<Layout/>}>
           <Route index element={<Dashboard/>}/>
+          <Route path='chat-pdf' element={<ChatPdf/>}/>
           <Route path='write-article' element={<WriteArticle/>}/>
           <Route path='blog-titles' element={<BlogTitles/>}/>
           <Route path='generate-images' element={<GenerateImages/>}/>
